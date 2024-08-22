@@ -19,29 +19,26 @@ export default function MyAccount() {
                 </MDBCol>
                 <MDBCol md="8">
                   <MDBCardBody className="p-4">
-                    <MDBTypography tag="h6">Information</MDBTypography>
+                    <MDBTypography tag="h6">Personal Info</MDBTypography>
                     <hr className="mt-0 mb-4" />
                     <MDBRow className="pt-1">
                       <MDBCol size="6" className="mb-3">
                         <MDBTypography tag="h6">Email</MDBTypography>
-                        <MDBCardText className="text-muted">Deepak@example.com</MDBCardText>
+                        <MDBCardText className="text-muted">royalxtic@gmail.com</MDBCardText>
                       </MDBCol>
                       <MDBCol size="6" className="mb-3">
                         <MDBTypography tag="h6">Phone</MDBTypography>
-                        <MDBCardText className="text-muted">123 456 789</MDBCardText>
+                        <MDBCardText className="text-muted">+91 9588099941</MDBCardText>
                       </MDBCol>
                     </MDBRow>
-
-                    <MDBTypography tag="h6">Information</MDBTypography>
-                    <hr className="mt-0 mb-4" />
                     <MDBRow className="pt-1">
                       <MDBCol size="6" className="mb-3">
-                        <MDBTypography tag="h6">Email</MDBTypography>
-                        <MDBCardText className="text-muted">Deepak@example.com</MDBCardText>
+                        <MDBTypography tag="h6">Name</MDBTypography>
+                        <MDBCardText className="text-muted">Deepak Jangid</MDBCardText>
                       </MDBCol>
                       <MDBCol size="6" className="mb-3">
-                        <MDBTypography tag="h6">Phone</MDBTypography>
-                        <MDBCardText className="text-muted">123 456 7899</MDBCardText>
+                        <MDBTypography tag="h6">DOB</MDBTypography>
+                        <MDBCardText className="text-muted">03-03-2002</MDBCardText>
                       </MDBCol>
                     </MDBRow>
 

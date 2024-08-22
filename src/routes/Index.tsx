@@ -10,12 +10,15 @@ import MyAccount from "../pages/MyAccount";
 import { Notification } from "../pages/Notification";
 import Cart from "../pages/Cart";
 import { MenSection} from "../pages/MensSection";
+import { Her } from "../pages/Her";
+import { ElectronicCompi } from "../components/EelectronicCompi";
+import Footer from "../components/Footer";
 
 
 
 let allpages ={
     path:'/',
-    element:<><Mynavbar/><Outlet/></>,
+    element:<><Mynavbar/><Outlet/><Footer/></>,
     children:[{
         path:'home',
         element:<Home/>
@@ -32,7 +35,7 @@ let allpages ={
 
     },
     {
-        path:'my account',
+        path:'myaccount',
         element:<MyAccount/>
 
     },
@@ -50,7 +53,18 @@ let allpages ={
         path:'mens',
         element:<MenSection/>
 
+    },
+    {
+        path:'She/her',
+        element:<Her/>
+
+    },
+    {
+        path:'electronics',
+        element:<ElectronicCompi/>
+
     }
+
 
 
     

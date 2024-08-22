@@ -2,15 +2,16 @@ import { useEffect, useState } from "react"
 import { apicaller } from "../api/api"
 import { Grid } from "@mui/material"
 import Mycards from "./Mycards"
+import { Electapicaller } from "../api/electricApi"
 
 
 
-export const CardComponentApi = () => {
-    let [apidata, setdataApi] = useState([])
+export const ElectronicCompi = () => {
+    let [electapidata, setelectdataApi] = useState([])
     useEffect(() => {
         (async () => {
 
-            setdataApi(await apicaller())
+            setelectdataApi(await Electapicaller())
         })()
 
     }, [])
@@ -23,8 +24,8 @@ export const CardComponentApi = () => {
             alignItems="center"
             marginTop={"50px"}
         >
-            {apidata.map((a: any) => {
-                return   <Mycards img ={a.images} title={a.title} price={ "Rs "+a.price}/>
+            {electapidata.map((a: any) => {
+                return <Mycards img ={a.images} title={a.title} price={ "Rs "+a.price}/>
             })}
 
 

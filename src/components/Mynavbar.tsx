@@ -20,6 +20,7 @@ import { Padding } from '@mui/icons-material';
 import { Icon } from './Icon';
 import { BrowserRouter, Link, useNavigate } from 'react-router-dom';
 import { inherits } from 'util';
+import '../pages/Head.css'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -103,8 +104,8 @@ export default function Mynavbar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}><Link to={('/profile')}>Profile</Link></MenuItem>
-      <MenuItem onClick={handleMenuClose}><Link to={'/my account'}>My account</Link></MenuItem>
+      <MenuItem onClick={handleMenuClose}><Link  className='headL' to={('/profile')}>Profile</Link></MenuItem>
+      <MenuItem onClick={handleMenuClose}><Link className='headL' to={'/myaccount'}>My account</Link></MenuItem>
     </Menu>
   );
 
@@ -164,8 +165,8 @@ export default function Mynavbar() {
   return (
     <Box sx={{ flexGrow: 1,backgroundColor: 'red'}}>
       <AppBar position="static" sx={{ backgroundColor: 'skyblue'}}>
-        <Toolbar>
-          <Link style={{color:"inherit"}} to={'/home'}>
+        <Toolbar >
+          <Link  className='head' style={{color:"inherit"}} to={'/home'}>
           <Typography
             variant="h6"
             noWrap
@@ -174,11 +175,15 @@ export default function Mynavbar() {
           >
             Custom App
           </Typography></Link>
-          <Link to={'/mens'}><MyOption name='he/his' /></Link>
-          <MyOption  name='she/her'/>
-          <MyOption  name='Kids'/>
-          <MyOption  name='Electronics'/>
-          <MyOption  name='Travel'/>
+          <Link  className='head' to={'/mens'}><MyOption name='he/his' /></Link>
+          <Link className='head' to={'/She/her'}><MyOption name='she/her'/></Link>
+         
+          <Badge badgeContent={"New Deals"} color="error">
+             <Link className='head' to={'/electronics'}><MyOption  name='Electronics'/></Link>
+              </Badge>
+          <Badge badgeContent={"makeMyTrip"} color="error">
+             <Link className='head' to={"https://www.makemytrip.com/?srsltid=AfmBOorQYRp42sam4Wu3J7ORBOIZG9dtRTDIhOukEWPwfxISlQ614p6p"}> <MyOption  name='Travel'/></Link>
+              </Badge>
           <Search >
             <SearchIconWrapper>
               <SearchIcon />
@@ -197,7 +202,7 @@ export default function Mynavbar() {
           
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Link to={'/notification'}>
+            <Link  className='head' to={'/notification'}>
             <IconButton
               size="large"
               aria-label="show 17 new notifications"

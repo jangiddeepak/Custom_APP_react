@@ -6,6 +6,7 @@ import CardContent from '@mui/joy/CardContent';
 import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
+import { Link } from 'react-router-dom';
 
 export default function Mycards(prop:any) {
   return (
@@ -33,8 +34,10 @@ export default function Mycards(prop:any) {
           sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
         
         >
-       Buy now
+          <Link to={'/cart'} className='head'>
+       Buy now</Link>
         </Button>
+        
       </CardContent>
     </Card>
   );
