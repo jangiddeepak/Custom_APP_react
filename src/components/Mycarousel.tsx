@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function Mycarousel() {
   return (
-    <Carousel>
+    <Carousel  className='bg-image hover-zoom'>
       <Carousel.Item>
         <Link to={'/electronics'}>
       <img height="600px" width="100%" src={img2}></img>

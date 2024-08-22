@@ -15,8 +15,8 @@ export default function Mycards(prop:any) {
         <Typography level="title-lg">{prop.title}</Typography>
     
       </div>
-      <AspectRatio minHeight="120px" maxHeight="200px">
-        <img style={{objectFit:"fill"}} src={prop.img}
+      <AspectRatio   className='bg-image hover-zoom' minHeight="120px" maxHeight="200px">
+        <img  className='img-fluid shadow-2-strong rounded-4' style={{objectFit:"fill"}} src={prop.img}
         />
       </AspectRatio>
       <CardContent orientation="horizontal">
