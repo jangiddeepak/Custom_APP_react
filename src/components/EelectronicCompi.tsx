@@ -27,11 +27,7 @@ export const ElectronicCompi = () => {
             {electapidata.map((a: any) => {
                 return <Mycards img ={a.images} title={a.title} price={ "Rs "+a.price}/>
             })}
-
-
-
-
-        </Grid>
+            </Grid>
 
     </>
 }

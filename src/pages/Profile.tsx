@@ -1,11 +1,16 @@
 import { Paper } from '@mui/material';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Footer from '../components/Footer';
+import Mynavbar from '../components/Mynavbar';
 export const Profile =()=>{
 
 
-  return (
-    <center>
+  return <>
+    <Mynavbar/>
+    
+    <center style={{marginTop:'2vw'}}>
+
    
     <Form style={{width:"50%"}}>
     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -33,5 +38,7 @@ export const Profile =()=>{
     </Form>
 
     </center>
-  );
+    <Footer/>
+   
+  </>
 }

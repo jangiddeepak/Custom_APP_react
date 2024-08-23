@@ -1,9 +1,13 @@
 import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBTypography, MDBIcon } from 'mdb-react-ui-kit';
 import img1 from '../static/images/prof.jpg'
+import Footer from '../components/Footer';
+import Mynavbar from '../components/Mynavbar';
 export default function MyAccount() {
   return (
+    
     <section className="vh-100" style={{ backgroundColor: '#f4f5f7' }}>
+      <Mynavbar/>
       <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="6" className="mb-4 mb-lg-0">
@@ -54,6 +58,9 @@ export default function MyAccount() {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
+      <Footer/>
     </section>
+    
   );
+ 
 }

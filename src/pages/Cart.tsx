@@ -24,7 +24,7 @@ import {
                 <MDBRow>
                   <MDBCol lg="7">
                     <MDBTypography tag="h5">
-                      <a href="#!" className="text-body">
+                      <a href="/home" className="text-body">
                         <MDBIcon fas icon="long-arrow-alt-left me-2" /> Continue
                         shopping
                       </a>
@@ -62,7 +62,7 @@ import {
                               <MDBTypography tag="h5">
                                 Iphone 11 pro
                               </MDBTypography>
-                              <p className="small mb-0">256GB, Navy Blue</p>
+                              <p className="small mb-0">256GB, silver</p>
                             </div>
                           </div>
                           <div className="d-flex flex-row align-items-center">
